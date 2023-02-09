@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="4 ФОТО 1 СЛОВО"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_one"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/back_image_corners"
+            android:backgroundTint="@color/purple_700"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/image_two"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/back_image_corners"
+            android:backgroundTint="@color/purple_200"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_third"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/back_image_corners"
+            android:backgroundTint="@color/teal_200"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/image_four"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/back_image_corners"
+            android:backgroundTint="@color/purple_500"
+            android:scaleType="centerCrop" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/orange"
+        android:paddingVertical="12dp"
+        android:text="ИГРАТЬ"
+        android:textSize="26sp"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>
